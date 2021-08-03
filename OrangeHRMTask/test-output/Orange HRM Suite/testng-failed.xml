@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Orange HRM Suite]">
+  <listeners>
+    <listener class-name="com.Listeners.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.testcases.LoginTest">
+        <methods>
+          <include name="TitleValidate"/>
+          <include name="setup"/>
+          <include name="setupClose"/>
+        </methods>
+      </class> <!-- com.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Orange HRM Suite] -->

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="71960" started-at="2021-08-03T16:01:29 IST" finished-at="2021-08-03T16:02:41 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="71960" started-at="2021-08-03T16:01:29 IST" finished-at="2021-08-03T16:02:41 IST">
+      <class name="com.testcases.UserManagementTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testcases.UserManagementTest@3dfc5fb8]" name="setup" is-config="true" duration-ms="33022" started-at="2021-08-03T16:01:29 IST" finished-at="2021-08-03T16:02:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addingUser()[pri:0, instance:com.testcases.UserManagementTest@3dfc5fb8]" name="addingUser" duration-ms="15710" started-at="2021-08-03T16:02:02 IST" finished-at="2021-08-03T16:02:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingUser -->
+        <test-method status="PASS" signature="setupClose()[pri:0, instance:com.testcases.UserManagementTest@3dfc5fb8]" name="setupClose" is-config="true" duration-ms="497" started-at="2021-08-03T16:02:18 IST" finished-at="2021-08-03T16:02:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClose -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testcases.UserManagementTest@3dfc5fb8]" name="setup" is-config="true" duration-ms="10851" started-at="2021-08-03T16:02:18 IST" finished-at="2021-08-03T16:02:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="titleValidationTest()[pri:1, instance:com.testcases.UserManagementTest@3dfc5fb8]" name="titleValidationTest" duration-ms="42" started-at="2021-08-03T16:02:29 IST" finished-at="2021-08-03T16:02:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleValidationTest -->
+        <test-method status="PASS" signature="setupClose()[pri:0, instance:com.testcases.UserManagementTest@3dfc5fb8]" name="setupClose" is-config="true" duration-ms="69" started-at="2021-08-03T16:02:29 IST" finished-at="2021-08-03T16:02:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClose -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testcases.UserManagementTest@3dfc5fb8]" name="setup" is-config="true" duration-ms="10199" started-at="2021-08-03T16:02:29 IST" finished-at="2021-08-03T16:02:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="navigationToUserManagement()[pri:2, instance:com.testcases.UserManagementTest@3dfc5fb8]" name="navigationToUserManagement" duration-ms="1452" started-at="2021-08-03T16:02:39 IST" finished-at="2021-08-03T16:02:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigationToUserManagement -->
+        <test-method status="PASS" signature="setupClose()[pri:0, instance:com.testcases.UserManagementTest@3dfc5fb8]" name="setupClose" is-config="true" duration-ms="69" started-at="2021-08-03T16:02:41 IST" finished-at="2021-08-03T16:02:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClose -->
+      </class> <!-- com.testcases.UserManagementTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
