@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -18,7 +18,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	public static Properties prop;
 	public static WebDriver driver;
-	public static Logger logger;
+	//public static Logger logger;
 
 	public TestBase() {
 		prop = new Properties();
@@ -45,7 +45,7 @@ public class TestBase {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
-		logger=logger.getLogger(TestBase.class);
+		//logger=logger.getLogger(TestBase.class);
 		logger.info("Opening the browser");
 		
 		driver.manage().window().maximize();
@@ -56,6 +56,6 @@ public class TestBase {
 
 	public void teardown() {
 		driver.close();
-		logger.info("Quiting the browser");
+		//logger.info("Quiting the browser");
 	}
 }
