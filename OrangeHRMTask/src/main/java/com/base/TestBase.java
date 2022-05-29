@@ -46,7 +46,7 @@ public class TestBase {
 			driver = new FirefoxDriver();
 		}
 		//logger=logger.getLogger(TestBase.class);
-		logger.info("Opening the browser");
+	//	logger.info("Opening the browser");
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

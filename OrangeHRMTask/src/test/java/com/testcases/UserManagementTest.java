@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.concurrent.TimeUnit;
 
+import com.pages.RecruitmentPage;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -31,11 +32,13 @@ public class UserManagementTest extends TestBase
 {		
 	DashBoardPage dp;
 	LoginPage lp;
+	RecruitmentPage recruitmentPage;
 	@BeforeMethod
 	public void setup() {
 		initialization();
 		lp=new LoginPage();
 		dp=lp.login(prop.getProperty("username"), prop.getProperty("password"));
+		recruitmentPage=new RecruitmentPage();
 	}
 	
 	@Test(priority = 1)
@@ -61,6 +64,15 @@ public class UserManagementTest extends TestBase
 			
 			e.printStackTrace();
 		}
+	}
+
+	@Test
+	public void addingACandidateForAJobVacancyTest(){
+		recruitmentPage.clickOnRecruitmentButton();
+		recruitmentPage.clickOnRecruitmentOptions();
+		recruitmentPage.clickOnAddCandidate();
+		String statusMessage=recruitmentPage.addingACandidate(prop.getProperty("jobRole"));
+		Assert.assertEquals(statusMessage,"Status: Application Initiated","Oops, there's some problem in your code, expected result doesn't match with the actual result");
 	}
 	@AfterMethod
 	public void setupClose()
